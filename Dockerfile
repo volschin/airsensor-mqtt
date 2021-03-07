@@ -31,4 +31,4 @@ COPY --from=builder /airsensor /airsensor
 
 #HEALTHCHECK --interval=30s --timeout=10s --start-period=10s --retries=3 CMD nc -z localhost 5111
 #CMD bash 
-CMD /airsensor -v
+ENTRYPOINT ["/airsensor", "-v"]
