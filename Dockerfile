@@ -23,7 +23,7 @@ ENV TERM xterm
 RUN apt-get update \
   && apt-get install -qqy --no-install-recommends apt-utils \
   apt-transport-https \
-  netcat \
+ # netcat \
   && apt-get autoremove -y && apt-get clean \
   && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 COPY --from=builder /airsensor /airsensor
