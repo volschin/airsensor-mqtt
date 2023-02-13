@@ -1,4 +1,4 @@
-FROM debian:bullseye-slim AS builder
+FROM debian:bookworm-slim AS builder
 ENV DEBIAN_FRONTEND noninteractive
 ENV TERM xterm
 
@@ -15,7 +15,7 @@ COPY airsensor.c /airsensor.c
 # for ssl support -lpaho-mqtt3cs, without -lpaho-mqtt3c
 RUN gcc -static -o airsensor airsensor.c -lusb -lpaho-mqtt3c -lpthread
 
-FROM debian:bullseye-slim
+FROM debian:bookworm-slim
 ENV DEBIAN_FRONTEND noninteractive
 ENV TERM xterm
 
