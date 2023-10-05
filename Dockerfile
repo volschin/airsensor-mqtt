@@ -4,7 +4,7 @@ ENV TERM xterm
 
 # Install base environment
 RUN apt-get update \
-  && apt-get install -qqy --no-install-recommends apt-utils \
+  && apt-get install -qqy --no-install-recommends apt-utils ca-certificates \
   apt-transport-https \
   build-essential gcc make cmake cmake-gui cmake-curses-gui \
   libusb-dev libpaho-mqtt-dev \
