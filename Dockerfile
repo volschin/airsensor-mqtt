@@ -7,9 +7,7 @@ RUN apt-get update \
   && apt-get install -qqy --no-install-recommends apt-utils ca-certificates \
   apt-transport-https \
   build-essential gcc make cmake cmake-gui cmake-curses-gui \
-  libusb-dev libpaho-mqtt-dev \
-  && apt-get autoremove -y && apt-get clean \
-  && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
+  libusb-dev libpaho-mqtt-dev
 
 COPY airsensor.c /airsensor.c
 # for ssl support -lpaho-mqtt3cs, without -lpaho-mqtt3c
