@@ -1,5 +1,4 @@
-#FROM debian:bookworm-slim@sha256:3d5df92588469a4c503adbead0e4129ef3f88e223954011c2169073897547cac AS builder
-FROM gcc:13.2 AS builder
+FROM gcc:14.1@sha256:d42f62e1b22c0cf5f0a56516b46600dbfe1c12f14ec9efe74908f3b53c43f6f9 AS builder
 ENV DEBIAN_FRONTEND noninteractive
 ENV TERM xterm
 
