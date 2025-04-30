@@ -1,4 +1,4 @@
-FROM gcc:14.2@sha256:95f598eea2b230fae0bca018c9e31ac1f9dc0599e5e06f2c70671f14449fdcb1 AS builder
+FROM gcc:14.2@sha256:73977e868fc9aa3d21e32a85a9cc76939966de9e3abe83909bf9578768a4e632 AS builder
 ENV DEBIAN_FRONTEND noninteractive
 ENV TERM xterm
 
